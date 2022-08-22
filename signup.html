@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+   <link rel="stylesheet" type="text/css" href="mystylesheet.css">
+
+</head>
+<body>
+	<div class="container">
+	<form  action="home.html">
+	
+	<div class="header">
+		<p class="re"><small>Required field are followed by *</small></p>
+	<h1>SignUp</h1>
+	
+	<p>*<input type="text" name="name" id="f"  required="" placeholder="First name">
+	<input type="text" name="name" placeholder="Middle name" id="m">*<input type="text" name="name" id="l"  required="" placeholder="Last name"></p>
+	<!-- <p>Gender:<input type="text" name="" id=gender></p> -->
+	<!-- <p>Address:<textarea name="address" id="address" cols="80%" rows="2"></textarea></p> -->
+	<p>*Email:<input type="email" name="email" id="email" required="" placeholder="ancdieuj134@gmail.com" width="20px"></p>
+	<p>*Password:<input type="Password" name="pincode" id="password" required=""></p>
+	<!-- <p>*Contact no.:<input type="number" name="contact" id="contact" required></p> -->
+	<div class="btn">
+	<button type="submit" class="btn"  id="buttton" onclick="confirm()" >Sign in</button>
+	
+</div>
+</div>
+	</form>
+</div>
+</body>
+<script>
+    function confirm()
+	{
+	 var fname; 
+	fname=document.getElementById("f").value;
+    localStorage.setItem("First name",fname);
+}
+</script>
+</html>
